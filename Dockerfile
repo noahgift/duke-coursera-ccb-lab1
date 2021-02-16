@@ -3,6 +3,9 @@ FROM python:3.7.3-stretch
 # Working Directory
 WORKDIR /app
 
+#Comment line below to fix lint
+RUN cd /tmp && echo "hello!"
+
 # Copy source code to working directory
 COPY . app.py /app/
 
